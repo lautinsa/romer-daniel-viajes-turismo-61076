@@ -19,6 +19,15 @@ import cancunDiciembre3 from "@/assets/packages/cancun-diciembre-3.jpg";
 import puntacanaDiciembre1 from "@/assets/packages/puntacana-diciembre-1.jpg";
 import puntacanaDiciembre2 from "@/assets/packages/puntacana-diciembre-2.jpg";
 import puntacanaDiciembre3 from "@/assets/packages/puntacana-diciembre-3.jpg";
+import alemania1 from "@/assets/packages/alemania-1.jpg";
+import alemania2 from "@/assets/packages/alemania-2.jpg";
+import alemania3 from "@/assets/packages/alemania-3.jpg";
+import dubai1 from "@/assets/packages/dubai-1.jpg";
+import dubai2 from "@/assets/packages/dubai-2.jpg";
+import dubai3 from "@/assets/packages/dubai-3.jpg";
+import turquiaGrecia1 from "@/assets/packages/turquia-grecia-1.png";
+import turquiaGrecia2 from "@/assets/packages/turquia-grecia-2.jpg";
+import turquiaGrecia3 from "@/assets/packages/turquia-grecia-3.jpg";
 
 export interface Package {
   slug: string;
@@ -164,6 +173,54 @@ export const packages: Package[] = [
     image: cancun1,
     images: [cancun1, cancun2, cancun3],
     excerpt: "All Inclusive. Hotel Imperial Las Perlas 3★. Aéreos desde Buenos Aires + traslados.",
+    mpLink: "",
+  },
+  {
+    slug: "alemania-francia-12-noches",
+    title: "Alemania — 15 días / 12 noches",
+    destino: "Alemania / Francia",
+    fecha: "14 de agosto 2026",
+    noches: 12,
+    price: 5799,
+    currency: 'USD',
+    seats: 6,
+    seatsTotal: 12,
+    deadline: "2026-07-15",
+    image: alemania1,
+    images: [alemania1, alemania2, alemania3],
+    excerpt: "Salida grupal acompañada desde Buenos Aires. Doble a compartir garantizada. Aéreos Lufthansa, hoteles 4★, desayunos, visitas guiadas, traslados. Operado por Special Tours / Lufthansa.",
+    mpLink: "",
+  },
+  {
+    slug: "dubai-mujeres-9-noches",
+    title: "Dubái para Mujeres — 11 días / 9 noches",
+    destino: "Dubái y Abu Dhabi",
+    fecha: "18 de abril 2026",
+    noches: 9,
+    price: 3490,
+    currency: 'USD',
+    seats: 8,
+    seatsTotal: 15,
+    deadline: "2026-03-20",
+    image: dubai1,
+    images: [dubai1, dubai2, dubai3],
+    excerpt: "Salida grupal exclusiva para mujeres desde Buenos Aires. Safari por el desierto, compras, spa, té en el Burj Al Arab, crucero por la marina. Operado por Splendid / Emirates.",
+    mpLink: "",
+  },
+  {
+    slug: "turquia-islas-griegas-16-noches",
+    title: "Turquía e Islas Griegas — 18 días / 16 noches",
+    destino: "Turquía / Grecia",
+    fecha: "11 de junio 2026",
+    noches: 16,
+    price: 5716,
+    currency: 'USD',
+    seats: 5,
+    seatsTotal: 12,
+    deadline: "2026-05-15",
+    image: turquiaGrecia1,
+    images: [turquiaGrecia1, turquiaGrecia2, turquiaGrecia3],
+    excerpt: "Salida grupal acompañada desde Buenos Aires. Doble a compartir garantizada. Aéreos Turkish Airlines, hoteles 4★, crucero y excursiones. Operado por Euroriente / Turkish Airlines.",
     mpLink: "",
   },
 ];
