@@ -13,8 +13,12 @@ import cancun3 from "@/assets/packages/cancun-3.jpg";
 import puntacana1 from "@/assets/packages/puntacana-1.jpg";
 import puntacana2 from "@/assets/packages/puntacana-2.jpg";
 import bayahibe1 from "@/assets/packages/bayahibe-1.jpg";
-import cancunDiciembre from "@/assets/packages/cancun-diciembre.jpg";
-import puntacanaDiciembre from "@/assets/packages/puntacana-diciembre.jpg";
+import cancunDiciembre1 from "@/assets/packages/cancun-diciembre-1.jpg";
+import cancunDiciembre2 from "@/assets/packages/cancun-diciembre-2.jpg";
+import cancunDiciembre3 from "@/assets/packages/cancun-diciembre-3.jpg";
+import puntacanaDiciembre1 from "@/assets/packages/puntacana-diciembre-1.jpg";
+import puntacanaDiciembre2 from "@/assets/packages/puntacana-diciembre-2.jpg";
+import puntacanaDiciembre3 from "@/assets/packages/puntacana-diciembre-3.jpg";
 
 export interface Package {
   slug: string;
@@ -46,7 +50,8 @@ export const packages: Package[] = [
     seats: 8,
     seatsTotal: 16,
     deadline: "2025-12-20",
-    image: cancunDiciembre,
+    image: cancunDiciembre1,
+    images: [cancunDiciembre1, cancunDiciembre2, cancunDiciembre3],
     excerpt: "Flamingo Cancún Resort — All Inclusive. Traslados y asesoría personalizada. Operado por Avianca. Precio por persona en base doble.",
     mpLink: "",
   },
@@ -61,7 +66,8 @@ export const packages: Package[] = [
     seats: 8,
     seatsTotal: 16,
     deadline: "2025-12-20",
-    image: puntacanaDiciembre,
+    image: puntacanaDiciembre1,
+    images: [puntacanaDiciembre1, puntacanaDiciembre2, puntacanaDiciembre3],
     excerpt: "Whala Bávaro — All Inclusive. Traslados y asesoría personalizada. Operado por Avianca. Precio por persona en base doble.",
     mpLink: "",
   },
