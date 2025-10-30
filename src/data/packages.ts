@@ -13,6 +13,8 @@ import cancun3 from "@/assets/packages/cancun-3.jpg";
 import puntacana1 from "@/assets/packages/puntacana-1.jpg";
 import puntacana2 from "@/assets/packages/puntacana-2.jpg";
 import bayahibe1 from "@/assets/packages/bayahibe-1.jpg";
+import cancunDiciembre from "@/assets/packages/cancun-diciembre.jpg";
+import puntacanaDiciembre from "@/assets/packages/puntacana-diciembre.jpg";
 
 export interface Package {
   slug: string;
@@ -33,6 +35,36 @@ export interface Package {
 }
 
 export const packages: Package[] = [
+  {
+    slug: "cancun-7-noches-diciembre",
+    title: "Cancún — 7 noches",
+    destino: "México / Quintana Roo / Cancún",
+    fecha: "27 de diciembre",
+    noches: 7,
+    price: 2249,
+    currency: 'USD',
+    seats: 8,
+    seatsTotal: 16,
+    deadline: "2025-12-20",
+    image: cancunDiciembre,
+    excerpt: "Flamingo Cancún Resort — All Inclusive. Traslados y asesoría personalizada. Operado por Avianca. Precio por persona en base doble.",
+    mpLink: "",
+  },
+  {
+    slug: "punta-cana-9-noches-diciembre",
+    title: "Punta Cana — 9 noches",
+    destino: "República Dominicana / Caribe / Punta Cana",
+    fecha: "27 de diciembre",
+    noches: 9,
+    price: 2639,
+    currency: 'USD',
+    seats: 8,
+    seatsTotal: 16,
+    deadline: "2025-12-20",
+    image: puntacanaDiciembre,
+    excerpt: "Whala Bávaro — All Inclusive. Traslados y asesoría personalizada. Operado por Avianca. Precio por persona en base doble.",
+    mpLink: "",
+  },
   {
     slug: "iguazu-4-noches",
     title: "Cataratas del Iguazú — 4 noches",
