@@ -1,0 +1,78 @@
+{
+  "config": {
+    "brandName": "Romero Daniel Viajes y Turismo",
+    "whatsapp": "+5492915074149",
+    "instagram": "https://www.instagram.com/romeroviajesyturismo",
+    "facebook": "https://www.facebook.com/people/Romero-Daniel-Viajes-y-Turismo/61571991167710/",
+    "email": "romeroviajesyturismo@gmail.com",
+    "heroTitle": "El viaje que soñás, ahora",
+    "heroSubtitle": "Promos limitadas, cupos reales y asesoría personalizada. Reservá en minutos."
+  },
+  "paquetes": [
+    {
+      "slug": "camboriu-8-noches-bus",
+      "title": "Camboriú — 8 noches",
+      "destino": "Brasil / Santa Catarina / Camboriú",
+      "fecha": "Temporada 2026",
+      "noches": 8,
+      "price": 699000,
+      "beforePrice": 799000,
+      "seats": 6,
+      "seatsTotal": 24,
+      "deadline": "2025-12-20",
+      "image": "https://images.unsplash.com/photo-1544551763-7ef038c8ce5d?q=80&w=1600",
+      "excerpt": "Bus grupal desde Bahía Blanca + hotel seleccionado + coordinación.",
+      "mpLink": ""
+    },
+    {
+      "slug": "rio-7-noches",
+      "title": "Río de Janeiro — 7 noches",
+      "destino": "Brasil / Río de Janeiro",
+      "fecha": "Enero 2026",
+      "noches": 7,
+      "price": 890000,
+      "beforePrice": 1050000,
+      "seats": 8,
+      "seatsTotal": 16,
+      "deadline": "2025-12-20",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1600",
+      "excerpt": "Hotel en Copacabana + traslados + asesoría en excursiones.",
+      "mpLink": ""
+    },
+    {
+      "slug": "buzios-6-noches",
+      "title": "Búzios — 6 noches",
+      "destino": "Brasil / Río de Janeiro / Búzios",
+      "fecha": "Marzo 2026",
+      "noches": 6,
+      "price": 760000,
+      "beforePrice": 845000,
+      "seats": 9,
+      "seatsTotal": 18,
+      "deadline": "2026-02-25",
+      "image": "https://images.unsplash.com/photo-1526485797147-5fcd14eec5f7?q=80&w=1600",
+      "excerpt": "Pousada con desayuno + traslados + asesoría playas.",
+      "mpLink": ""
+    },
+    {
+      "slug": "iguazu-4-noches",
+      "title": "Cataratas del Iguazú — 4 noches",
+      "destino": "Argentina / Misiones / Iguazú",
+      "fecha": "Todo el año",
+      "noches": 4,
+      "price": 420000,
+      "beforePrice": 480000,
+      "seats": 10,
+      "seatsTotal": 20,
+      "deadline": "2026-02-15",
+      "image": "https://images.unsplash.com/photo-1561828995-2a9d9d2d46a6?q=80&w=1600",
+      "excerpt": "Aéreos + hotel + traslados. Parque Nacional Iguazú.",
+      "mpLink": ""
+    }
+  ],
+  "testimonios": [
+    { "name": "Sofía M.", "stars": 5, "text": "Precio real y atención rápida. Todo impecable." },
+    { "name": "Lucas P.", "stars": 5, "text": "Me consiguieron lugar cuando ya no había. Súper recomendados." },
+    { "name": "Carla R.", "stars": 4, "text": "Excelente relación precio/calidad. Volvería a viajar con ellos." }
+  ]
+}
