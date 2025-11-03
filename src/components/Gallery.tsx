@@ -8,7 +8,7 @@ import clientPhoto1 from "@/assets/client-photo-1.jpg";
 import clientPhoto2 from "@/assets/client-photo-2.jpg";
 import clientPhoto4 from "@/assets/client-photo-4.jpg";
 import clientPhoto5 from "@/assets/client-photo-5.jpg";
-import clientPhoto7 from "@/assets/client-photo-7.jpg";
+import clientPhoto7 from "@/assets/client-photo-7-horizontal.jpg";
 import clientPhoto8 from "@/assets/client-photo-8.jpg";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
@@ -50,7 +50,7 @@ const Gallery = () => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className={`w-full h-full ${index === 10 ? 'object-cover' : 'object-contain bg-muted/30 p-1'} group-hover:scale-105 transition-transform duration-500`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
               </AspectRatio>
