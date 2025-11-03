@@ -8,7 +8,7 @@ import clientPhoto1 from "@/assets/client-photo-1.jpg";
 import clientPhoto2 from "@/assets/client-photo-2.jpg";
 import clientPhoto4 from "@/assets/client-photo-4.jpg";
 import clientPhoto5 from "@/assets/client-photo-5.jpg";
-import clientPhoto7 from "@/assets/client-photo-7.jpg";
+import clientPhoto7 from "@/assets/client-photo-7-new.jpg";
 import clientPhoto8 from "@/assets/client-photo-8.jpg";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
