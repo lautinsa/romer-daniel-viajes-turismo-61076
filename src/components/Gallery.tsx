@@ -50,7 +50,7 @@ const Gallery = () => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className={`w-full h-full ${index === 10 ? 'object-cover' : 'object-contain bg-muted/30 p-1'} group-hover:scale-105 transition-transform duration-500`}
+                  className="w-full h-full object-contain bg-muted/30 p-1 group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
               </AspectRatio>
