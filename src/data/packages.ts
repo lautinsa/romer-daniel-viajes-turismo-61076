@@ -25,6 +25,7 @@ import alemania3 from "@/assets/packages/alemania-3.jpg";
 import dubai1 from "@/assets/packages/dubai-1.jpg";
 import dubai2 from "@/assets/packages/dubai-2.jpg";
 import dubai3 from "@/assets/packages/dubai-3.jpg";
+import dubaiMain from "@/assets/packages/dubai-main.jpg";
 import turquiaGrecia1 from "@/assets/packages/turquia-grecia-1.png";
 import turquiaGrecia2 from "@/assets/packages/turquia-grecia-2.jpg";
 import turquiaGrecia3 from "@/assets/packages/turquia-grecia-3.jpg";
@@ -202,7 +203,7 @@ export const packages: Package[] = [
     seats: 8,
     seatsTotal: 15,
     deadline: "2026-03-20",
-    image: dubai1,
+    image: dubaiMain,
     images: [dubai1, dubai2, dubai3],
     excerpt: "Salida grupal exclusiva para mujeres desde Buenos Aires. Safari por el desierto, compras, spa, té en el Burj Al Arab, crucero por la marina. Operado por Splendid / Emirates.",
     mpLink: "",
