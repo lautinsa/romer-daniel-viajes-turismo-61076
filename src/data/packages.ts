@@ -29,6 +29,12 @@ import turquiaGrecia1 from "@/assets/packages/turquia-grecia-1.png";
 import turquiaGrecia2 from "@/assets/packages/turquia-grecia-2.jpg";
 import turquiaGrecia3 from "@/assets/packages/turquia-grecia-3.jpg";
 
+export interface MonthlyPrice {
+  month: string;
+  price: number;
+  beforePrice?: number;
+}
+
 export interface Package {
   slug: string;
   title: string;
@@ -38,6 +44,7 @@ export interface Package {
   price: number;
   currency?: 'ARS' | 'USD';
   beforePrice?: number;
+  monthlyPrices?: MonthlyPrice[];
   seats: number;
   seatsTotal: number;
   deadline: string;
@@ -84,7 +91,7 @@ export const packages: Package[] = [
     slug: "iguazu-4-noches",
     title: "Cataratas del Iguazú — 4 noches",
     destino: "Argentina / Misiones / Iguazú",
-    fecha: "24/11 · 21/01 · 14/02 · 07/03 · 06/04",
+    fecha: "21/01 · 14/02 · 07/03 · 06/04",
     noches: 4,
     price: 520000,
     currency: 'ARS',
@@ -100,12 +107,18 @@ export const packages: Package[] = [
     slug: "buzios-9-noches",
     title: "Búzios — 9 noches",
     destino: "Brasil / Río de Janeiro / Búzios",
-    fecha: "Enero a Mayo",
+    fecha: "Enero a Abril",
     noches: 9,
     price: 990,
+    monthlyPrices: [
+      { month: "ENERO", price: 1380 },
+      { month: "FEBRERO", price: 1410 },
+      { month: "MARZO", price: 1380 },
+      { month: "ABRIL", price: 990 },
+    ],
     seats: 9,
     seatsTotal: 18,
-    deadline: "2026-05-30",
+    deadline: "2026-04-30",
     image: buzios1,
     images: [buzios1, buzios2, buzios3],
     excerpt: "10 días / 9 noches. Aéreos desde Buenos Aires + traslados + pousada 3★/4★. Desayuno incluido.",
@@ -115,12 +128,18 @@ export const packages: Package[] = [
     slug: "camboriu-8-noches",
     title: "Camboriú — 8 noches",
     destino: "Brasil / Santa Catarina / Camboriú",
-    fecha: "Todo el año",
+    fecha: "Enero a Abril",
     noches: 8,
-    price: 780,
+    price: 790,
+    monthlyPrices: [
+      { month: "ENERO", price: 940, beforePrice: 846 },
+      { month: "FEBRERO", price: 990 },
+      { month: "MARZO", price: 790 },
+      { month: "ABRIL", price: 790 },
+    ],
     seats: 10,
     seatsTotal: 24,
-    deadline: "2026-12-31",
+    deadline: "2025-11-30",
     image: camboriu1,
     images: [camboriu1, camboriu2, camboriu3],
     excerpt: "12 días / 8 noches. Media pensión. Micro desde Bahía Blanca + hotel céntrico.",
@@ -166,12 +185,12 @@ export const packages: Package[] = [
     destino: "México / Quintana Roo / Cancún",
     fecha: "19 de febrero",
     noches: 7,
-    price: 1290,
+    price: 2700,
     seats: 8,
     seatsTotal: 16,
     deadline: "2026-02-01",
     image: cancun1,
-    images: [cancun1, cancun2, cancun3],
+    images: [cancun1, cancun2],
     excerpt: "All Inclusive. Hotel Imperial Las Perlas 3★. Aéreos desde Buenos Aires + traslados.",
     mpLink: "",
   },
