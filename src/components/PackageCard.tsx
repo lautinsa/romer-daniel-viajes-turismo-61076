@@ -1,4 +1,4 @@
-import { MapPin, Calendar, Moon, AlertCircle, ChevronLeft, ChevronRight, DollarSign } from "lucide-react";
+import { MapPin, Calendar, Moon, AlertCircle, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -145,23 +145,19 @@ const PackageCard = ({ pkg }: PackageCardProps) => {
 
         {/* Monthly Prices */}
         {pkg.monthlyPrices && (
-          <div className="bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 rounded-lg p-4 space-y-3">
-            <div className="flex items-center gap-2 mb-2">
-              <DollarSign className="w-4 h-4 text-primary" />
-              <p className="text-sm font-semibold text-foreground">Precios por mes</p>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="bg-muted/50 rounded-lg p-3 space-y-2">
+            <div className="grid grid-cols-4 gap-2">
               {pkg.monthlyPrices.map((monthPrice) => (
-                <div key={monthPrice.month} className="bg-background/80 backdrop-blur-sm rounded-md p-2.5 text-center border border-border/50 hover:border-primary/50 transition-colors">
-                  <p className="text-xs text-muted-foreground font-medium mb-1.5">
+                <div key={monthPrice.month} className="text-center">
+                  <p className="text-xs text-muted-foreground font-medium mb-1">
                     {monthPrice.month}
                   </p>
                   {monthPrice.beforePrice && (
-                    <p className="text-xs text-muted-foreground line-through mb-0.5">
+                    <p className="text-xs text-muted-foreground line-through">
                       USD {monthPrice.beforePrice}
                     </p>
                   )}
-                  <p className="text-sm font-bold text-primary">
+                  <p className="text-sm font-bold text-foreground">
                     USD {monthPrice.price}
                   </p>
                 </div>
