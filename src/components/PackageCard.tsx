@@ -102,14 +102,21 @@ const PackageCard = ({ pkg }: PackageCardProps) => {
 
         {/* Price */}
         <div className="absolute bottom-4 left-4 right-4">
-          {pkg.beforePrice && (
+          {!pkg.monthlyPrices && pkg.beforePrice && (
             <p className="text-white/80 text-sm line-through mb-1">
               Desde {formatPrice(pkg.beforePrice, pkg.currency)}
             </p>
           )}
-          <p className="text-white text-3xl font-bold">
-            Desde {formatPrice(pkg.price, pkg.currency)}
-          </p>
+          {!pkg.monthlyPrices && (
+            <p className="text-white text-3xl font-bold">
+              Desde {formatPrice(pkg.price, pkg.currency)}
+            </p>
+          )}
+          {pkg.monthlyPrices && (
+            <p className="text-white text-2xl font-bold">
+              Desde {formatPrice(pkg.price, pkg.currency)}
+            </p>
+          )}
         </div>
       </div>
 
@@ -135,6 +142,29 @@ const PackageCard = ({ pkg }: PackageCardProps) => {
 
         {/* Excerpt */}
         <p className="text-sm text-muted-foreground">{pkg.excerpt}</p>
+
+        {/* Monthly Prices */}
+        {pkg.monthlyPrices && (
+          <div className="bg-muted/50 rounded-lg p-3 space-y-2">
+            <div className="grid grid-cols-4 gap-2">
+              {pkg.monthlyPrices.map((monthPrice) => (
+                <div key={monthPrice.month} className="text-center">
+                  <p className="text-xs text-muted-foreground font-medium mb-1">
+                    {monthPrice.month}
+                  </p>
+                  {monthPrice.beforePrice && (
+                    <p className="text-xs text-muted-foreground line-through">
+                      USD {monthPrice.beforePrice}
+                    </p>
+                  )}
+                  <p className="text-sm font-bold text-foreground">
+                    USD {monthPrice.price}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Availability Progress */}
         <div className="space-y-2">
