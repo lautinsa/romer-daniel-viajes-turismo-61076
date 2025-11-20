@@ -28,6 +28,9 @@ import dubai3 from "@/assets/packages/dubai-3.jpg";
 import turquiaGrecia1 from "@/assets/packages/turquia-grecia-1.png";
 import turquiaGrecia2 from "@/assets/packages/turquia-grecia-2.jpg";
 import turquiaGrecia3 from "@/assets/packages/turquia-grecia-3.jpg";
+import colombia1 from "@/assets/packages/colombia-1.jpg";
+import colombia2 from "@/assets/packages/colombia-2.jpg";
+import colombia3 from "@/assets/packages/colombia-3.jpg";
 
 export interface MonthlyPrice {
   month: string;
@@ -240,6 +243,22 @@ export const packages: Package[] = [
     image: turquiaGrecia1,
     images: [turquiaGrecia1, turquiaGrecia2, turquiaGrecia3],
     excerpt: "Salida grupal acompañada desde Buenos Aires. Doble a compartir garantizada. Aéreos Turkish Airlines, hoteles 4★, crucero y excursiones. Operado por Euroriente / Turkish Airlines.",
+    mpLink: "",
+  },
+  {
+    slug: "colombia-13-dias",
+    title: "🇨🇴 Colombia — 13 días / 12 noches",
+    destino: "Eje cafetero / Medellín / Cartagena",
+    fecha: "19 de mayo 2026",
+    noches: 12,
+    price: 2288,
+    currency: 'USD',
+    seats: 6,
+    seatsTotal: 6,
+    deadline: "2026-05-05",
+    image: colombia1,
+    images: [colombia1, colombia2, colombia3],
+    excerpt: "Vuelos LATAM. Bogotá, Eje Cafetero, Medellín y Cartagena. Desayunos incluidos. Catedral de Sal de Zipaquirá, Valle de Cocora, finca cafetera RECUCA, city tours. Acompañamiento permanente y asistencia médica. Impuestos USD 788. Seña USD 450.",
     mpLink: "",
   },
 ];
