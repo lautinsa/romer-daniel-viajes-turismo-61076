@@ -71,7 +71,7 @@ export const packages: Package[] = [
     deadline: "2025-12-20",
     image: cancunDiciembre1,
     images: [cancunDiciembre1, cancunDiciembre2, cancunDiciembre3],
-    excerpt: "Flamingo Cancún Resort — All Inclusive. Traslados y asesoría personalizada. Operado por Avianca. Precio por persona en base doble.",
+    excerpt: "All Inclusive. Traslados y asesoría personalizada. Operado por Avianca. Precio por persona en base doble.",
     mpLink: "",
   },
   {
@@ -87,7 +87,7 @@ export const packages: Package[] = [
     deadline: "2025-12-20",
     image: puntacanaDiciembre1,
     images: [puntacanaDiciembre1, puntacanaDiciembre2, puntacanaDiciembre3],
-    excerpt: "Whala Bávaro — All Inclusive. Traslados y asesoría personalizada. Operado por Avianca. Precio por persona en base doble.",
+    excerpt: "All Inclusive. Traslados y asesoría personalizada. Operado por Avianca. Precio por persona en base doble.",
     mpLink: "",
   },
   {
@@ -112,7 +112,7 @@ export const packages: Package[] = [
     destino: "Brasil / Río de Janeiro / Búzios",
     fecha: "Enero a Abril",
     noches: 9,
-    price: 990,
+    price: 1380,
     monthlyPrices: [
       { month: "ENERO", price: 1380 },
       { month: "FEBRERO", price: 1410 },
@@ -133,7 +133,7 @@ export const packages: Package[] = [
     destino: "Brasil / Santa Catarina / Camboriú",
     fecha: "Enero a Abril",
     noches: 8,
-    price: 790,
+    price: 990,
     monthlyPrices: [
       { month: "ENERO", price: 940, beforePrice: 846 },
       { month: "FEBRERO", price: 990 },
@@ -180,21 +180,6 @@ export const packages: Package[] = [
       "https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?q=80&w=1600"
     ],
     excerpt: "14 días / 10 noches. Aéreos desde Buenos Aires + traslados + desayuno. Templos, playas y cultura.",
-    mpLink: "",
-  },
-  {
-    slug: "cancun-7-noches",
-    title: "Cancún, México — 7 noches",
-    destino: "México / Quintana Roo / Cancún",
-    fecha: "19 de febrero",
-    noches: 7,
-    price: 2700,
-    seats: 8,
-    seatsTotal: 16,
-    deadline: "2026-02-01",
-    image: cancun1,
-    images: [cancun1, cancun2],
-    excerpt: "All Inclusive. Hotel Imperial Las Perlas 3★. Aéreos desde Buenos Aires + traslados.",
     mpLink: "",
   },
   {
@@ -247,7 +232,7 @@ export const packages: Package[] = [
   },
   {
     slug: "colombia-13-dias",
-    title: "🇨🇴 Colombia — 13 días / 12 noches",
+    title: "Colombia — 13 días / 12 noches",
     destino: "Eje cafetero / Medellín / Cartagena",
     fecha: "19 de mayo 2026",
     noches: 12,
