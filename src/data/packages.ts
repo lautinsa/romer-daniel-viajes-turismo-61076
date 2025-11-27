@@ -55,6 +55,8 @@ export interface Package {
   images?: string[];
   excerpt: string;
   mpLink?: string;
+  blackFriday?: boolean;
+  blackFridayDeadline?: string;
 }
 
 export const packages: Package[] = [
@@ -96,7 +98,16 @@ export const packages: Package[] = [
     destino: "Argentina / Misiones / Iguazú",
     fecha: "21/01 · 14/02 · 07/03 · 06/04",
     noches: 4,
-    price: 520000,
+    price: 560000,
+    beforePrice: 622222,
+    monthlyPrices: [
+      { month: "ENERO", price: 560000 },
+      { month: "FEBRERO", price: 590000 },
+      { month: "MARZO", price: 590000 },
+      { month: "ABRIL", price: 590000 },
+      { month: "MAYO", price: 590000 },
+      { month: "JUNIO", price: 590000 },
+    ],
     currency: 'ARS',
     seats: 8,
     seatsTotal: 20,
@@ -105,6 +116,8 @@ export const packages: Package[] = [
     images: [iguazu1, iguazu2, iguazu3],
     excerpt: "7 días / 4 noches. Media pensión. Micro desde Bahía Blanca + asistencia al viajero.",
     mpLink: "",
+    blackFriday: true,
+    blackFridayDeadline: "2025-11-30",
   },
   {
     slug: "buzios-9-noches",
@@ -112,11 +125,11 @@ export const packages: Package[] = [
     destino: "Brasil / Río de Janeiro / Búzios",
     fecha: "Enero a Abril",
     noches: 9,
-    price: 1380,
+    price: 1100,
     monthlyPrices: [
-      { month: "ENERO", price: 1380 },
-      { month: "FEBRERO", price: 1410 },
-      { month: "MARZO", price: 1380 },
+      { month: "ENERO", price: 1100, beforePrice: 1380 },
+      { month: "FEBRERO", price: 1200, beforePrice: 1410 },
+      { month: "MARZO", price: 1100, beforePrice: 1380 },
       { month: "ABRIL", price: 990 },
     ],
     seats: 9,
@@ -126,6 +139,8 @@ export const packages: Package[] = [
     images: [buzios1, buzios2, buzios3],
     excerpt: "10 días / 9 noches. Aéreos desde Buenos Aires + traslados + pousada 3★/4★. Desayuno incluido.",
     mpLink: "",
+    blackFriday: true,
+    blackFridayDeadline: "2025-11-30",
   },
   {
     slug: "camboriu-8-noches",
@@ -133,10 +148,10 @@ export const packages: Package[] = [
     destino: "Brasil / Santa Catarina / Camboriú",
     fecha: "Enero a Abril",
     noches: 8,
-    price: 990,
+    price: 846,
     monthlyPrices: [
-      { month: "ENERO", price: 940, beforePrice: 846 },
-      { month: "FEBRERO", price: 990 },
+      { month: "ENERO", price: 846, beforePrice: 940 },
+      { month: "FEBRERO", price: 846, beforePrice: 990 },
       { month: "MARZO", price: 790 },
       { month: "ABRIL", price: 790 },
     ],
@@ -147,6 +162,8 @@ export const packages: Package[] = [
     images: [camboriu1, camboriu2, camboriu3],
     excerpt: "12 días / 8 noches. Media pensión. Micro desde Bahía Blanca + hotel céntrico.",
     mpLink: "",
+    blackFriday: true,
+    blackFridayDeadline: "2025-11-30",
   },
   {
     slug: "punta-cana-bayahibe-10-noches",

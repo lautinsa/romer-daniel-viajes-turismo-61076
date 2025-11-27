@@ -1,4 +1,4 @@
-import { MapPin, Calendar, Moon, AlertCircle, ChevronLeft, ChevronRight, DollarSign } from "lucide-react";
+import { MapPin, Calendar, Moon, AlertCircle, ChevronLeft, ChevronRight, DollarSign, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -91,6 +91,16 @@ const PackageCard = ({ pkg }: PackageCardProps) => {
           </>
         )}
         
+        {/* Black Friday Badge */}
+        {pkg.blackFriday && pkg.blackFridayDeadline && new Date(pkg.blackFridayDeadline) >= new Date() && (
+          <Badge
+            className="absolute top-4 left-4 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 text-white shadow-lg animate-pulse border-0"
+          >
+            <Zap className="w-3 h-3 mr-1 fill-white" />
+            BLACK FRIDAY
+          </Badge>
+        )}
+
         {/* Urgency Badge */}
         <Badge
           variant="destructive"
