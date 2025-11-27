@@ -93,12 +93,13 @@ const PackageCard = ({ pkg }: PackageCardProps) => {
         
         {/* Black Friday Badge */}
         {pkg.blackFriday && pkg.blackFridayDeadline && new Date(pkg.blackFridayDeadline) >= new Date() && (
-          <Badge
-            className="absolute top-4 left-4 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 text-white shadow-lg animate-pulse border-0"
-          >
-            <Zap className="w-3 h-3 mr-1 fill-white" />
-            BLACK FRIDAY
-          </Badge>
+          <div className="absolute top-4 left-4 z-10">
+            <Badge className="bg-black text-yellow-400 border-2 border-yellow-400 shadow-[0_0_20px_rgba(250,204,21,0.6)] animate-pulse font-bold text-xs px-3 py-1.5">
+              <Zap className="w-4 h-4 mr-1 fill-yellow-400 animate-pulse" />
+              BLACK FRIDAY
+            </Badge>
+            <div className="absolute inset-0 bg-yellow-400/20 blur-xl animate-pulse rounded-full" />
+          </div>
         )}
 
         {/* Urgency Badge */}
