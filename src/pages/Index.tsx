@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import AboutUs from "@/components/AboutUs";
+import BlackFridayBanner from "@/components/BlackFridayBanner";
 import CommercialBanner from "@/components/CommercialBanner";
 import PackagesSection from "@/components/PackagesSection";
 import Gallery from "@/components/Gallery";
@@ -17,7 +18,7 @@ const Index = () => {
       <Hero />
       <TrustBar />
       <AboutUs />
-      
+      <BlackFridayBanner />
       <PackagesSection />
       <Gallery />
       <ClientVideos />
