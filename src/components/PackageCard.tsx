@@ -151,7 +151,7 @@ const PackageCard = ({ pkg }: PackageCardProps) => {
         </div>
 
         {/* Excerpt */}
-        <p className="text-sm text-muted-foreground">{pkg.excerpt}</p>
+        <p className="text-sm text-muted-foreground leading-relaxed">{pkg.excerpt}</p>
 
         {/* Monthly Prices */}
         {pkg.monthlyPrices && (
@@ -168,11 +168,11 @@ const PackageCard = ({ pkg }: PackageCardProps) => {
                   </p>
                   {monthPrice.beforePrice && (
                     <p className="text-xs text-muted-foreground line-through mb-0.5">
-                      USD {monthPrice.beforePrice}
+                      {pkg.currency === 'ARS' ? formatPrice(monthPrice.beforePrice, 'ARS') : `USD ${monthPrice.beforePrice}`}
                     </p>
                   )}
                   <p className="text-sm font-bold text-primary">
-                    USD {monthPrice.price}
+                    {pkg.currency === 'ARS' ? formatPrice(monthPrice.price, 'ARS') : `USD ${monthPrice.price}`}
                   </p>
                 </div>
               ))}
