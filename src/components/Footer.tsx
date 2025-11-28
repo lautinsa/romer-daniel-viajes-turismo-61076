@@ -48,19 +48,13 @@ const Footer = () => {
           {/* Correos de contacto */}
           <div className="mt-4 space-y-1">
             <p className="text-xs text-muted-foreground">
-              <a href="mailto:davidc@romerodanielviajesyturismo.com.ar" className="hover:text-primary transition-colors">
-                davidc@romerodanielviajesyturismo.com.ar
-              </a>
+              davidc@romerodanielviajesyturismo.com.ar
             </p>
             <p className="text-xs text-muted-foreground">
-              <a href="mailto:danielr@romerodanielviajesyturismo.com.ar" className="hover:text-primary transition-colors">
-                danielr@romerodanielviajesyturismo.com.ar
-              </a>
+              danielr@romerodanielviajesyturismo.com.ar
             </p>
             <p className="text-xs text-muted-foreground">
-              <a href="mailto:nicolasm@romerodanielviajesyturismo.com.ar" className="hover:text-primary transition-colors">
-                nicolasm@romerodanielviajesyturismo.com.ar
-              </a>
+              nicolasm@romerodanielviajesyturismo.com.ar
             </p>
           </div>
           
