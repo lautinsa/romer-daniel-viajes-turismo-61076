@@ -45,6 +45,25 @@ const Footer = () => {
             Agencia de viajes habilitada | Legajo {config.legajo}
           </p>
           
+          {/* Correos de contacto */}
+          <div className="mt-4 space-y-1">
+            <p className="text-xs text-muted-foreground">
+              <a href="mailto:davidc@romerodanielviajesyturismo.com.ar" className="hover:text-primary transition-colors">
+                davidc@romerodanielviajesyturismo.com.ar
+              </a>
+            </p>
+            <p className="text-xs text-muted-foreground">
+              <a href="mailto:danielr@romerodanielviajesyturismo.com.ar" className="hover:text-primary transition-colors">
+                danielr@romerodanielviajesyturismo.com.ar
+              </a>
+            </p>
+            <p className="text-xs text-muted-foreground">
+              <a href="mailto:nicolasm@romerodanielviajesyturismo.com.ar" className="hover:text-primary transition-colors">
+                nicolasm@romerodanielviajesyturismo.com.ar
+              </a>
+            </p>
+          </div>
+          
           {/* Crédito del desarrollador */}
           <div className="mt-6 pt-6 border-t border-border">
             <p className="text-xs md:text-sm text-muted-foreground/70 px-4">
