@@ -94,7 +94,7 @@ export const packages: Package[] = [
   },
   {
     slug: "iguazu-remate-locos",
-    title: "⭐ REMATE DE LOCOS 2x1 — Cataratas del Iguazú",
+    title: "2x1 — Cataratas del Iguazú",
     destino: "Argentina / Misiones / Iguazú",
     fecha: "28 de enero",
     noches: 4,
