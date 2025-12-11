@@ -105,7 +105,7 @@ export const packages: Package[] = [
     deadline: "2026-01-27",
     image: iguazu1,
     images: [iguazu1, iguazu2, iguazu3],
-    excerpt: "7 días / 4 noches desde Bahía Blanca. Precio para 2 personas. Bus ida y vuelta + media pensión. Promo válida hasta agotar stock.",
+    excerpt: "7 días / 4 noches desde Bahía Blanca. Precio en efectivo para 2 personas. Bus ida y vuelta + media pensión. Promo válida hasta agotar stock.",
     mpLink: "",
   },
   {
